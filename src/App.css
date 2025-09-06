@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.user {
+  box-shadow: 0 0 10px 5px rgb(233, 233, 233);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 150px;
+  padding: 10px;
+  width: 80%;
+}
+.userlist {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  overflow: auto;
+}
+input {
+  margin-top: 10px;
+  padding: 7px;
+  width: 70%;
+  border-radius: 7px;
+  border: none;
+  background-color: rgb(243, 187, 196);
+  outline: none;
+}
+table {
+  margin-top: 40px;
+  width: 90%;
+  border-collapse: collapse;
+}
+th {
+  color: pink;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+  padding: 12px 15px;
+  font-size: 20px;
+}
+td {
+  cursor: pointer;
+  font-size: 18px;
+  color: black;
+  border-right: 3px solid pink;
+  border-left: 3px solid pink;
+  border-radius: 10px;
+  text-align: center;
+  padding: 12px 15px;
+  transition: 0.2s ease-in-out;
+}
+
+td:hover {
+  color: rgb(235, 55, 85);
+}
+button {
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  background-color: pink;
+  padding: 5px;
+  border: none;
+  margin-left: 10px;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+}
+button:hover {
+  color: black;
+  box-shadow: 0 0 5px 1px pink;
+}
+.create {
+  width: 87%;
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: center; */
+  align-items: center;
+}
+.btn {
+  padding: 7px;
+}
+
+/* modal */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+  padding: 1rem;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  max-height: 90vh;
+  overflow-y: auto;
+  width: 100%;
+  max-width: 500px;
+}
+
+.modal-medium {
+  max-width: 600px;
+}
+
+.modal-large {
+  max-width: 800px;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.modal-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin: 0;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-close:hover {
+  background: #f7fafc;
+}
+
+.close-icon {
+  width: 20px;
+  height: 20px;
+  color: #6b7280;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    margin: 1rem;
+    max-width: none;
+  }
+}
+
+/* Modal Form Styles */
+.user-form {
+  max-width: none;
+}
+
+.form-section {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #db2777;
+  display: inline-block;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.form-input {
+  width: 99%;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #db2777;
+  box-shadow: 0 0 0 3px rgba(219, 39, 119, 0.1);
+}
+
+.form-help {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* spinner */
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 50px auto;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
