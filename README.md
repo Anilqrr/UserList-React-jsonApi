@@ -7,7 +7,6 @@ A simple React application built with Vite that fetches and displays a list of u
 ## Table of Contents
 
 - [Features](#features)
-- [Demo](#demo)
 - [Getting Started](#getting‑started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
