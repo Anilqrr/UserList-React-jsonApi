@@ -1,5 +1,5 @@
 import "./App.css";
-import UserList from "./components/UserList";
+//import UserList from "./components/UserList";
 import UserTable from "./components/UserTable";
 import { Toaster } from "react-hot-toast";
 
